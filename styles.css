@@ -222,6 +222,10 @@ header .title p {
   }
 
   /* Header */
+
+  header {
+    padding-top: 40px;
+  }
   
   .recipe-title, .receipe-description, .tags {
     width: 100%;

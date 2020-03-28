@@ -143,7 +143,9 @@ header .title p {
 /* Tags */
 
 .tags {
-  align-self: center  ;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -267,6 +269,14 @@ header .title p {
 
   section {
     padding: 24px 0;
+  }
+
+  .tag {
+    margin: 0 16px 16px 0;
+  }
+
+  .tag:nth-child(n+2) {
+    margin-left: 0;
   }
 
 }

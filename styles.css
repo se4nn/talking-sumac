@@ -86,6 +86,7 @@ p, a, li {
   font-size: 24px;
   line-height: 40px;
   color: #476B4B;
+  max-width: 560px;
 }
 
 ul {
@@ -126,12 +127,6 @@ header {
 
 header .title {
   z-index: 2;
-}
-
-header .title p {
-  width: calc(50w - 64px);
-  max-width: 400px;
-  padding-left: 64px;
 }
 
 .recipe-description {
@@ -200,6 +195,10 @@ header .title p {
 
 /* Recipe Collection */
 
+.title-page {
+  flex-direction: column;
+}
+
 .recipe-collection {
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +208,7 @@ header .title p {
 .recipe-collection .recipe-card {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  flex-basis: calc(33% - 24px);
   text-decoration: none;
 }
 
@@ -217,15 +216,12 @@ header .title p {
   width: 100%;
 }
 
-.recipe-collection .recipe-card:nth-child(even) {
-  flex-direction: column-reverse;
-}
-
 .recipe-collection .recipe-card:nth-child(odd) img {
   padding-bottom: 40px;
 }
 
 .recipe-collection .recipe-card:nth-child(even) img {
+  order: 1;
   padding-top: 16px;
   margin-bottom: 24px;
 }
@@ -293,6 +289,12 @@ header .title p {
     padding: 16px 32px;
   }
 
+  /* Recipe Collection */
+
+  .recipe-collection .recipe-card {
+    flex-basis: calc(50% - 40px);
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -313,6 +315,18 @@ header .title p {
 
   .tag:nth-child(n+2) {
     margin-left: 0;
+  }
+
+  /* Recipe Collection */
+
+  .recipe-collection .recipe-card:nth-child(even) img {
+    order: 0;
+    padding-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .recipe-collection .recipe-card {
+    flex-basis: 100%;
   }
 
 }

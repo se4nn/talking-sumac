@@ -216,14 +216,8 @@ header .title {
   width: 100%;
 }
 
-.recipe-collection .recipe-card:nth-child(odd) img {
+.recipe-collection .recipe-card:nth-child(n) img {
   padding-bottom: 40px;
-}
-
-.recipe-collection .recipe-card:nth-child(even) img {
-  order: 1;
-  padding-top: 16px;
-  margin-bottom: 24px;
 }
 
 
@@ -318,12 +312,6 @@ header .title {
   }
 
   /* Recipe Collection */
-
-  .recipe-collection .recipe-card:nth-child(even) img {
-    order: 0;
-    padding-top: 0;
-    margin-bottom: 24px;
-  }
 
   .recipe-collection .recipe-card {
     flex-basis: 100%;

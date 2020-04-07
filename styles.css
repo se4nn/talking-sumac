@@ -323,12 +323,17 @@ ol + ol {
 
   .recipe-collection .recipe-card {
     flex-basis: 100%;
+    padding-bottom: 40px;
+  }
+
+  .recipe-collection .recipe-card img {
+    padding-bottom: 16px;
   }
 
   .recipe-collection .recipe-card:nth-child(3n + 2) img {
     order: 0;
     padding-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
 
 }

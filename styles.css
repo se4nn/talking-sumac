@@ -216,12 +216,18 @@ header .title {
   width: 100%;
 }
 
-.recipe-collection .recipe-card:nth-child(n) img {
+.recipe-collection .recipe-card img {
   padding-bottom: 40px;
 }
 
 ol + ol {
   margin-top: 40px;
+}
+
+.recipe-collection .recipe-card:nth-child(3n + 2) img {
+  order: 1;
+  padding-top: 16px;
+  margin-bottom: 24px;
 }
 
 
